@@ -6,6 +6,14 @@
   font-weight: 400;
   src: url('../fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* dm-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 :root {
   --hover-color: #118DA8;
@@ -158,6 +166,7 @@ main {
 .main-content-text-item-level {
   color: var(--text-color);
   font-size: 7rem;
+  font-weight: 700;
   line-height: 88px;
   letter-spacing: 3.2;
   margin-left: 2.5rem;
@@ -368,7 +377,7 @@ main {
 .subscribe-img {
   position: absolute;
   left: 45px;
-  top: 355px;
+  top: 405px;
 }
 .subscribe-main {
   width: 1300px;
@@ -422,6 +431,7 @@ main {
   height: 48px;
   background-color: var(--hover-color);
   font-size: 1.5rem;
+  font-weight: 700;
   line-height: 28.8px;
   color: var(--text-color);
   border-radius: 1rem;
@@ -452,6 +462,12 @@ main {
   height: 321px;
   background-color: var(--episodes-bg-color);
   border-radius: 1rem;  
+}
+.stars-card:hover .stars-card-main-text {
+    color: var(--hover-color);    
+}
+.stars-card:hover .stars-card-text {
+    color: var(--hover-color);    
 }
 .stars-card-item {
   display: flex;
@@ -490,6 +506,13 @@ main {
   border-radius: 1rem;  
 }
 
+.stars-card-bottom:hover .stars-card-main-text-bottom {
+  color: var(--hover-color);
+}
+
+.stars-card-bottom:hover .stars-card-text {
+  color: var(--hover-color);
+}
 .stars-card-main-text-bottom {
   color: var(--text-color);
   font-size: 3.6rem;
@@ -547,6 +570,13 @@ main {
   color: var(--text-color);
   font-size: 1.7rem;
   line-height: 27px;
+}
+
+.footer-container-link:hover {
+  color: var(--hover-color);
+}
+.footer-container-link:active {
+  color: var(--hover-color);
 }
 .footer-container-three {
   margin-left: 1.6rem;
